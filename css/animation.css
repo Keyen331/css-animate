@@ -1,19 +1,33 @@
 #rotate {
-  -webkit-transform: rotate(10deg);
-  background-color: blue;
+    -webkit-transform: rotate(10deg);
+  	background-color: blue;
 }
 
 #skew {
-  transform: skew(10deg,10deg);
-  background-color: orange;
+  	transform: skew(10deg,10deg);
+  	background-color: orange;
 }
 
 #all {
-  transform: rotate(20deg);
-  transform: skewY(-20deg);
-  background-color: red;
+	animation-name: sad;
+	animation-duration: 5s;
+	transform: rotate(20deg);
+	transform: skewY(-20deg);
+	background-color: red;
 }
 
-@keyframes animate {
-  
+@keyframes sad{
+	from{transform: rotate(0deg);}
+	to{transform: rotate(360deg);}
+}
+
+#animate {
+	animation-name: love;
+	animation-duration: 2s;
+	background-color: pink;
+}
+
+@keyframes love {
+	from{transform: translateX(0);}
+	to{transform: translateX(900px);}
 }
