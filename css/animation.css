@@ -1,11 +1,11 @@
 #rotate {
-    -webkit-transform: rotate(10deg);
-  	background-color: blue;
+  transform: rotate(45deg);
+  background-color: blue;
 }
 
 #skew {
-  	transform: skew(10deg,10deg);
-  	background-color: orange;
+  transform: skew(10deg,10deg);
+  background-color: orange;
 }
 
 #all {
@@ -23,11 +23,28 @@
 
 #animate {
 	animation-name: love;
-	animation-duration: 2s;
+	animation-duration: 5s;
 	background-color: pink;
 }
 
 @keyframes love {
 	from{transform: translateX(0);}
 	to{transform: translateX(900px);}
+}
+
+#bagtit, #tawaw, #amin {
+  border: 2px solid #000;
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin: 10px;
+}
+
+h3{
+  border-bottom: 1px solid #000;
+  text-align: center;
+}
+
+#bagtit:hover {
+background-color: black;
 }
